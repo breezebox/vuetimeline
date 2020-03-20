@@ -96,6 +96,8 @@ article(
 // NPM
 import { BaseBadge, BaseNumber } from "@growthbunker/vuedarkmode"
 import { format } from "timeago.js"
+import 'dayjs/locale/ja'
+import dayjs from 'dayjs'
 
 // PROJECT: MIXINS
 import ThemeMixin from "../mixins/ThemeMixin.js"
@@ -163,6 +165,9 @@ export default {
   computed: {
     ago() {
       return format(this.date)
+    },
+    yyyy() {
+      return dayjs(this.date).format('YYYY年')
     }
   },
 
