@@ -14,7 +14,7 @@ article(
   ]`
 )
   .gb-vue-timeline-update__left
-    span.gb-vue-timeline-update__ago {{ ago }}
+    span.gb-vue-timeline-update__ago {{ yyyy }}
 
   .gb-vue-timeline-update__center
     base-number(
@@ -48,7 +48,7 @@ article(
           size="small"
         ) {{ category }}
 
-        span.gb-vue-timeline-update__ago {{ ago }}
+        span.gb-vue-timeline-update__ago {{ yyyy }}
 
       h2(
         v-html="title"
