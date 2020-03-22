@@ -167,7 +167,8 @@ export default {
       return format(this.date)
     },
     yyyy() {
-      return dayjs(this.date).format('YYYY年')
+      // return dayjs(this.date).format('YYYY年')
+      return this.date + '年'
     }
   },
 
